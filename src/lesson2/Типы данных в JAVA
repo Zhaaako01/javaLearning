@@ -1,0 +1,21 @@
+                       Типы данных в JAVA:
+      Простые                                         Ссылочные
+      PRIMITIVE                                       REFERENCE
+
+
+        Простые типы данных(primitive data types)
+ В java всего 8 простых типов данных, и они делятся на три подгруппы:
+
+          Численные                Символьный                 Логический
+          (numeric)                (character)                 (boolean)
+               |                       |                           |
+               |                      char                      boolean
+               |
+               |
+               |
+    Целые <----=----------------------------------------------> Дробные
+  (integers)                                                  (floating-point)
+  * byte                                                         * float
+  * short                                                        * double(default)
+  * int(default)
+  * long
