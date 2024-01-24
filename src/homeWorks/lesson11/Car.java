@@ -13,8 +13,8 @@ public class Car {
 }
 
 class CarTest {
-    static void changeDoorAmount(Car car1, int a) {
-        car1.doorAmount = a;
+    static void changeDoorAmount(Car car1, int newDoorAmount) {
+        car1.doorAmount = newDoorAmount;
     }
 
     static void changeColor(Car car1, Car car2) {
@@ -29,6 +29,7 @@ class CarTest {
     public static void main(String[] args) {
         Car merc = new Car("Black", "v10", 4);
         Car audi = new Car("Blue", "V8", 4);
+
         changeColor(merc, audi);
 
 //        System.out.println(merc.color);
