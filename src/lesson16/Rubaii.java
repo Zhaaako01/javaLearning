@@ -26,6 +26,5 @@ public class Rubaii {
             System.out.print(c1);
         }
         System.out.println();
-
     }
 }
