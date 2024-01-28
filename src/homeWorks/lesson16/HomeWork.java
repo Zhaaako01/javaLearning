@@ -14,5 +14,6 @@ public class HomeWork {
         HomeWork homeW = new HomeWork();
         homeW.email("ya@yahoo.com; on@mail.ru; ona@gmail.com;");
 
+
     }
 }
