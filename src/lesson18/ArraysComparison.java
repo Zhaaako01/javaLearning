@@ -11,6 +11,6 @@ public class ArraysComparison {
 
         array1[1] = 0;
         array2[5 - 3] = 4;
-        array1[array1.length] = 10; // exception
+        array1[array2.length] = 10; // exception
     }
 }
