@@ -7,13 +7,13 @@ public class Student {
 
 
     public StringBuilder getName() {
-        StringBuilder sb = new StringBuilder(name);
-        return sb;
+        StringBuilder name2 = new StringBuilder(name);
+        return name2;
     }
 
-    public void setName(StringBuilder sb) {
-        if (sb.length() > 3) {
-            this.name = sb;
+    public void setName(StringBuilder name) {
+        if (name.length() > 3) {
+            this.name = name;
         } else {
             System.out.println("Слишком короткое имя");
         }
