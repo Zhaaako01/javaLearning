@@ -1,13 +1,22 @@
 package lesson24;
 
 public class Test3 {
+    public static void main(String[] args) {
+        Help_able h = new Driver();
+        Swim_able s = new Driver();
+        Employee e = new Driver();
+        System.out.println(h.A);
+        h.pomosh();
+        h.tushitPojar("voda");
+        s.swim();
+    }
 }
 
 class Employee {
-    String name = "Kolya";
+    String name;
     int age;
     int experience;
-    double salary = 100;
+    double salary;
 
     void eat() {
         System.out.println("Kushat");
@@ -15,24 +24,6 @@ class Employee {
 
     void sleep() {
         System.out.println("sleep");
-    }
-}
-
-class Teacher extends Employee implements Help_able {
-    int kolichestvoUchenikov;
-
-    void uchit() {
-        System.out.println("uchit");
-    }
-
-    @Override
-    public void pomosh() {
-        System.out.println("Uchitel okazivaet pomosh");
-    }
-
-    @Override
-    public void tushitPojar() {
-        System.out.println("Uchitel tushit pojar");
     }
 }
 
@@ -49,8 +40,8 @@ class Driver extends Employee implements Help_able, Swim_able {
     }
 
     @Override
-    public void tushitPojar() {
-        System.out.println("Driver tushit pojar");
+    public void tushitPojar(String s) {
+        System.out.println("Driver tushit pojar s pomoshiu " + s);
     }
 
     @Override
@@ -59,10 +50,32 @@ class Driver extends Employee implements Help_able, Swim_able {
     }
 }
 
+
+class Teacher extends Employee implements Help_able {
+    int kolichestvoUchenikov;
+
+    void uchit() {
+        System.out.println("uchit");
+    }
+
+    @Override
+    public void pomosh() {
+        System.out.println("Uchitel okazivaet pomosh");
+    }
+
+    @Override
+    public void tushitPojar(String s) {
+        System.out.println("Uchitel tushit pojar s pomoshiu " + s);
+    }
+}
+
+
 interface Help_able {
     void pomosh();
 
-    void tushitPojar();
+    void tushitPojar(String predmet);
+
+    public final static int A = 10;
 }
 
 interface Swim_able {
